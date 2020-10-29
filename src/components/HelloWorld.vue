@@ -3,7 +3,7 @@
 
     
     
-    <Home data="hi again" msg="holoo vue" />
+    <Home data="hi again" msg="holoo vue" msgA="welcome" />
   </div>
   
 </template>
