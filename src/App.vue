@@ -2,20 +2,24 @@
   <img alt="Vue logo" src="./assets/logo.png">
  <!-- <HelloWorld msg="Welcome to Your Vue.js App"/>-->
  <!-- <Welcome />-->
- <Temp />
+<!-- <Temp /> -->
+<Deco />
+
 </template>
 
 <script>
 //import HelloWorld from './components/HelloWorld.vue'
 //import Welcome from './components/welcome.vue'
-import Temp from './components/template.vue'
+//import Temp from './components/template.vue'
+import Deco from './components/style.vue'
 
 export default {
   name: 'App',
   components: {
   //  HelloWorld
  // Welcome
- Temp
+ //Temp
+   Deco
   }
 }
 </script>
