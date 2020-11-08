@@ -1,10 +1,12 @@
 <template>
   <img alt="Vue logo" src="./assets/logo.png">
+  <h1>{{title}}</h1>
  <!-- <HelloWorld msg="Welcome to Your Vue.js App"/>-->
  <!-- <Welcome />-->
 <!-- <Temp /> -->
 <!--<Deco /> -->
-<Databind />
+<!-- <Databind />-->
+<Child v-on:changetitle="updateTitleText($event)" />
 </template>
 
 <script>
@@ -12,7 +14,8 @@
 //import Welcome from './components/welcome.vue'
 //import Temp from './components/template.vue'
 //import Deco from './components/style.vue'
-import Databind from './components/Databind.vue'
+//import Databind from './components/Databind.vue'
+import Child from './components/Child.vue'
 export default {
   name: 'App',
   components: {
@@ -20,8 +23,23 @@ export default {
  // Welcome
  //Temp
   // Deco
-  Databind
+ // Databind
+ Child
+},
+data(){
+  return{
+    title:"child to parent",
   }
+},
+
+methods:{
+  updateTitleText(title){
+    this.title=title
+  }
+
+},
+
+
 }
 </script>
 
