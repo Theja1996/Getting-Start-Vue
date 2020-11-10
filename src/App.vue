@@ -6,7 +6,8 @@
 <!-- <Temp /> -->
 <!--<Deco /> -->
 <!-- <Databind />-->
-<Child v-on:changetitle="updateTitleText($event)" />
+<!--<Child v-on:changetitle="updateTitleText($event)" />-->
+<Login />
 </template>
 
 <script>
@@ -15,7 +16,9 @@
 //import Temp from './components/template.vue'
 //import Deco from './components/style.vue'
 //import Databind from './components/Databind.vue'
-import Child from './components/Child.vue'
+//import Child from './components/Child.vue'
+import Login from './components/Login.vue'
+
 export default {
   name: 'App',
   components: {
@@ -24,7 +27,8 @@ export default {
  //Temp
   // Deco
  // Databind
- Child
+ //Child
+ Login
 },
 data(){
   return{
