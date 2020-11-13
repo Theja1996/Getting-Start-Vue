@@ -1,13 +1,17 @@
+/* eslint-disable vue/no-deprecated-filter */
+
 <template>
   <img alt="Vue logo" src="./assets/logo.png">
-  <h1>{{title}}</h1>
+  <!--<h1>{{title}}</h1>-->
+  // eslint-disable-next-line vue/no-deprecated-filter
+  <h1>{{ Ucase(info)}}</h1>
  <!-- <HelloWorld msg="Welcome to Your Vue.js App"/>-->
  <!-- <Welcome />-->
 <!-- <Temp /> -->
 <!--<Deco /> -->
 <!-- <Databind />-->
 <!--<Child v-on:changetitle="updateTitleText($event)" />-->
-<Login />
+<!--<Login />-->
 </template>
 
 <script>
@@ -17,7 +21,7 @@
 //import Deco from './components/style.vue'
 //import Databind from './components/Databind.vue'
 //import Child from './components/Child.vue'
-import Login from './components/Login.vue'
+//import Login from './components/Login.vue'
 
 export default {
   name: 'App',
@@ -28,11 +32,12 @@ export default {
   // Deco
  // Databind
  //Child
- Login
+ //Login
 },
 data(){
   return{
-    title:"child to parent",
+    //title:"child to parent",
+    info:"Filters on vue",
   }
 },
 
